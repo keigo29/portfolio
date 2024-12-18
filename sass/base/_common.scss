@@ -1,0 +1,148 @@
+@charset "UTF-8";
+$window-max-width: 1980px;
+$window-base-width: 1250px;
+$window-mini-width: 980px;
+$breakpoint-mobile: 768px;
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('EBGaramond-Bold.ttf')  format('truetype');
+  src: url('EBGaramond-BoldItalic.ttf') format('truetype'),
+       url('EBGaramond-ExtraBold.ttf') format('truetype'),
+       url('EBGaramond-ExtraBoldItalic.ttf') format('truetype'),
+       url('EBGaramond-Italic.ttf') format('truetype'),
+       url('EBGaramond-Medium.ttf') format('truetype'),
+       url('EBGaramond-MediumItalic.ttf') format('truetype'),
+       url('EBGaramond-Regular.ttf') format('truetype'),
+       url('EBGaramond-SemiBold.ttf') format('truetype'),
+       url('EBGaramond-SemiBoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin EBGaramond {
+  font-family: 'EB Garamond', serif;
+  
+  
+  
+}
+@mixin NotoSans {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+@mixin NotoSerif {
+  font-family: 'Noto Serif JP', serif;
+
+}
+@mixin NotoSansCJK {
+  font-family: "noto-sans-cjk-jp", sans-serif;
+
+}
+@mixin Barlow {
+  font-family: "Barlow", sans-serif;
+}
+@mixin ShipporiMincho {  
+  font-family: "Shippori Mincho", serif;
+
+}
+@mixin Lato {  
+  font-family: "Lato", serif;
+  font-weight: 500;
+}
+@mixin Outfit {  
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+@mixin Kumbh {  
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 500;
+}
+
+@mixin pc-max {
+  @media screen and (min-width: ($window-max-width)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: ($window-base-width)) {
+    @content;
+  }
+}
+
+@mixin pc-min {
+  @media screen and (max-width: ($window-base-width)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($breakpoint-mobile)) {
+    @content;
+  }
+}
+
+html {
+  // scroll-behavior: smooth;
+  // scroll-padding-top: 70px; /* 固定ヘッダの高さ分 */
+  font-family:"Zen Kaku Gothic New","Lato","Kumbh Sans", sans-serif;
+  font-size: 0.83333333333333vw;
+  // 計算式：　10(px) / 1200(px) * 100 = 0.83333333333333
+  background: #F8F8F8;
+  @include pc {
+    font-size: 10px;
+  }
+
+  @include sp {
+    font-size: 2.666666666667vw;
+    // font-size: 0.52083333333Vw;
+  }
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc {
+  display: block !important;
+}
+.sp {
+  display: none !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@include sp {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
+
+body {
+  // max-width: $window-max-width;
+  min-width: auto;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.Inner {
+  max-width: $window-base-width;
+  min-width: auto;
+  margin: 0 auto;
+  @include pc-max {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+  }
+  &--min {
+    max-width: $window-mini-width;
+    @include sp {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}

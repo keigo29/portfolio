@@ -1,0 +1,10 @@
+/* スライドの動き等速 */
+.swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  /* 画像のサイズ調整 */
+  .swiper-slide img {
+    height: auto;
+    width: 268px;
+    
+  }

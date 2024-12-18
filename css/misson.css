@@ -1,0 +1,48 @@
+.Misson {
+  height: 424px;
+  flex-shrink: 0;
+  margin-top: 200px;
+  margin-right: 30%;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  background: var(--back-blue, linear-gradient(180deg, #0AF 0%, #083DF5 115.91%));
+}
+
+.Misson__container {
+  width: calc(100vw - 30%);
+  max-width: 1100px;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30%;
+  padding-top: 50px;
+}
+
+.Misson__container__ttl {
+  color: #FFF;
+}
+
+.Misson__container__ttl__dis {
+  color: white;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Misson__container__ttl__h2 {
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.52px;
+}
+
+.Misson__container__content {
+  color: #FFF;
+  padding-top: 10px;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 188.235% */
+}

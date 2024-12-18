@@ -1,0 +1,46 @@
+.Misson{
+    
+    height: 424px;
+    flex-shrink: 0;
+    margin-top: 200px;
+    margin-right: 30%;
+    color: rgb(255, 255, 255);
+    border-radius: 0px 20px 20px 0px;
+    background: var(--back-blue, linear-gradient(180deg, #0AF 0%, #083DF5 115.91%));
+    &__container{
+        width:  calc(100vw - 30%);
+        max-width: 1108px;
+        margin-left: auto;
+        padding-right: 30px; 
+        padding-left: 30%;
+        padding-top: 50px;
+        &__ttl{
+            color: #FFF;
+
+            &__dis{
+                color: white;
+                font-size: 1.3rem;
+                font-style: normal;  
+
+                font-weight: 700;
+                line-height: normal;
+                
+            }
+            &__h2{
+                font-size: 4.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2.52px;
+            }
+        }
+        &__content{
+            color: #FFF;
+            padding-top: 10px;
+            font-size: 1.7rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 188.235% */
+        }
+    }
+}

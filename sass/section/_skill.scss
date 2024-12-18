@@ -1,0 +1,65 @@
+.Skill{
+    margin-top: 200px;
+    &__head{
+        display: flex;
+        justify-content:space-between;
+    
+    &__txt{
+        &__ttl{
+            color: #191919;
+            @include Lato;
+            font-size: 4.3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.58px;
+        }
+        &__dis{
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            background: var(--gradient-blue, linear-gradient(91deg, #1386FF -5.23%, #056CD6 100.86%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__con{
+        width: 80%;
+        color: #000;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23px; /* 176.923% */
+    }
+    }
+&__first{
+    img{
+        width: 131px;
+        height: 131px;
+    }
+}
+    &__items{
+        margin-top: 60px;
+        &__first{
+            display: flex;
+            justify-content:space-around;
+            width: 950px;
+            margin: 0 auto;
+            img{
+                width: 155px;
+            }
+        }
+        &__second{
+            display: flex;
+            justify-content:space-around;
+            width: 750px;
+
+            margin: 50px auto;
+            img{
+                width: 155px;
+            }
+        }
+    }
+}

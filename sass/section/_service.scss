@@ -1,0 +1,58 @@
+.Service{
+    &__head{
+        &__ttl{
+            color: var(--blue, #067AF2);
+            text-align: center;
+            /* text shadow */
+            text-shadow: 0px 5px 14px rgba(6, 122, 242, 0.32);
+            
+            font-size: 4.2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.52px;
+        }
+        &__dis{
+           
+            color: #000;
+
+            text-align: center;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 10px auto;
+        }
+    }
+    &__items{
+         display: flex;
+        &__item{
+            width:  calc(100vw - 70%);
+            &__head{
+                width: 100px;
+                line-height: 0.9px;
+                span{
+                    color: #D2D2D2;
+                    @include Kumbh;
+                    font-size: 2.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    // line-height: normal;
+                    letter-spacing: 1.14px;
+                }
+                    color: #D2D2D2;
+                    @include Kumbh;
+                    font-size: 5.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.14px;
+                
+                &__dis{
+    
+                }
+
+            }
+        }
+    }
+}

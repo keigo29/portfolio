@@ -1,0 +1,78 @@
+.About{
+    margin-top: 130px;
+    &__txt{
+        &__ttl{
+            color: #191919;
+            @include Lato;
+            font-family: Lato;
+            font-size: 4.3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.58px;
+        }
+        &__dis{
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            background: var(--gradient-blue, linear-gradient(91deg, #1386FF -5.23%, #056CD6 100.86%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__container{
+        margin-top: 16px;
+        display: flex;
+        gap: 60px;
+        &__left{
+            &__profile{
+                img{
+                    width: 352px;
+                    height: 351px;
+                }
+            }
+        }
+        &__right{
+            background: #F8F8F8;
+            padding-top: 23px;
+            padding-right: 25px;
+
+            &__ttl{
+                color: #000;
+                font-size: 2.6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &__dis{
+                margin-top: 5px;
+                color: #000;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px; /* 169.231% */
+            }
+            &__name{
+                padding-right: 10px;
+
+                padding-top: 20px;
+                text-align: right;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 2.72px;
+                &::after{
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11' fill='none'%3E%3Cpath d='M1 9.91772L9.47365 9.47364L9.02957 0.999988' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    content: '';     // 疑似要素に必須
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    width: 12px;
+                    height: 6px;
+                }
+            }
+        }
+    }
+}
