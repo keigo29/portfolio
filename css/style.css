@@ -112,6 +112,10 @@ input, select {
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-family: "Zen Kaku Gothic New","Lato","Kumbh Sans", sans-serif;
   font-size: 0.83333333333333vw;
@@ -653,7 +657,7 @@ body {
 .Skill__head__con {
   width: 80%;
   color: #000;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
   line-height: 23px;
@@ -691,6 +695,10 @@ body {
   width: 155px;
 }
 
+.Service {
+  margin-top: 150px;
+}
+
 .Service__head__ttl {
   color: var(--blue, #067AF2);
   text-align: center;
@@ -715,22 +723,64 @@ body {
 
 .Service__items {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .Service__items__item {
-  width: calc(100vw - 70%);
+  flex: 1;
+  /* 均等に幅を分配 */
+  margin: 0 50px;
+}
+
+.Service__items__item__container {
+  padding-top: 70px;
+  border-radius: 16px;
+  z-index: -1;
+  position: relative;
+  top: -158px;
+  background: rgba(210, 210, 210, 0.22);
+  padding-top: 192px;
+  border-radius: 16px;
+  background: rgba(210, 210, 210, 0.22);
+}
+
+.Service__items__item__container__ttl {
+  color: var(--blue, #067AF2);
+  text-align: center;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.26px;
+}
+
+.Service__items__item__container__dis {
+  color: #000;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+
+.Service__items__item img {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
 }
 
 .Service__items__item__head {
   width: 100px;
-  line-height: 0.9px;
+  line-height: 38.9px;
   color: #D2D2D2;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
   font-size: 5.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 1.14px;
 }
 
@@ -742,4 +792,115 @@ body {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 1.14px;
+}
+
+.Works {
+  width: 100%;
+  background: linear-gradient(180deg, #0AF 0%, #001971 115.91%);
+  height: 726px;
+}
+
+.Works__head {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Works__head__title__ttl {
+  color: white;
+  font-weight: 500;
+  font-size: 4.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 2.58px;
+}
+
+.Works__head__title__dis {
+  color: white;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4;
+}
+
+.Works__head__container {
+  width: 80%;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.Works__items {
+  margin-top: 72px;
+  display: flex;
+  gap: 30px;
+}
+
+.Works__items__item {
+  border-radius: 14px;
+  background: linear-gradient(180deg, #FFF 64.04%, #C0DCFF 100%);
+  width: 293px;
+  height: 351px;
+}
+
+.Works__items__item__head img {
+  width: 293px;
+  border-radius: 14px;
+  height: 183px;
+}
+
+.Works__items__item__ttl {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--blue, #067AF2);
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.26px;
+}
+
+.Works__items__item__categoris {
+  display: flex;
+  gap: 8px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.Works__items__item__categoris__categori {
+  height: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  display: inline-flex;
+  padding: 8px 10px 9px 9px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #87CAFF;
+  background: rgba(255, 255, 255, 0.88);
+  color: #016DC3;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.Works__items__item__content {
+  margin-top: 5px;
+  padding: 10px;
+  color: #66696C;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 10px;
 }

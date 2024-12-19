@@ -86,7 +86,9 @@ $breakpoint-mobile: 768px;
     @content;
   }
 }
-
+a{
+  text-decoration: none;
+}
 html {
   // scroll-behavior: smooth;
   // scroll-padding-top: 70px; /* 固定ヘッダの高さ分 */

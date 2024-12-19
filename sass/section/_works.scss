@@ -1,0 +1,110 @@
+.Works{
+    width: 100%;
+    background: linear-gradient(180deg, #0AF 0%, #001971 115.91%);
+    height: 726px;
+    &__head{
+        max-width: 1250px;
+        margin: 0 auto;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        &__title{
+            &__ttl{
+            color: white;
+            font-weight: 500;
+            font-size: 4.3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 0.8;
+            letter-spacing: 2.58px;
+            }
+            &__dis{
+                color: white;
+                font-size: 1.3rem;
+                font-style: normal;
+                font-weight: 700;
+          
+                line-height: 2.4;
+    
+            }
+        }
+        &__container{
+            width: 80%;
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23px;
+            }
+        }
+    &__items{
+        margin-top: 72px;
+        display: flex;
+        gap: 30px;
+        &__item{
+            border-radius: 14px;
+            background: linear-gradient(180deg, #FFF 64.04%, #C0DCFF 100%);
+            width: 293px;
+            height: 351px;
+            &__head{
+                
+                img{
+                 width: 293px;
+                 border-radius: 14px;
+                 height: 183px;
+                }
+            }
+            &__ttl{
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: var(--blue, #067AF2);
+                font-size: 2.1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.26px;
+            }
+            &__categoris{
+                display: flex;
+                gap: 8px;
+                margin-left: 8px;
+                margin-top: 8px;
+                &__categori{
+                    height: 5px;
+                    margin-top: 5px;
+                    padding: 5px;
+                    display: inline-flex;
+                   
+                    padding: 8px 10px 9px 9px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    border: 1px solid #87CAFF;
+                    background: rgba(255, 255, 255, 0.88);
+                    color: #016DC3;
+                    text-align: center;
+                    font-family: "Noto Sans JP";
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                }
+            }
+            &__content{
+                margin-top: 5px;
+                padding: 10px;
+                color: #66696C;
+                font-size: 1.3rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .Btn{
+
+    }
+}
