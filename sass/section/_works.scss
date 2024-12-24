@@ -2,6 +2,7 @@
     width: 100%;
     background: linear-gradient(180deg, #0AF 0%, #001971 115.91%);
     height: 726px;
+    margin-top: 15rem;
     &__head{
         max-width: 1250px;
         margin: 0 auto;
@@ -49,58 +50,58 @@
             &__head{
                 
                 img{
-                 width: 293px;
-                 border-radius: 14px;
-                 height: 183px;
+                 width: 29.3rem;
+                 border-radius: 1.4rem;
+                 height: 18.3rem;
                 }
             }
             &__ttl{
-                padding-top: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
                 color: var(--blue, #067AF2);
                 font-size: 2.1rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                letter-spacing: 1.26px;
+                letter-spacing: 0.126rem;
             }
             &__categoris{
                 display: flex;
-                gap: 8px;
-                margin-left: 8px;
-                margin-top: 8px;
+                gap: 0.8rem;
+                margin-left: 0.8rem;
+                margin-top: 0.8rem;
                 &__categori{
-                    height: 5px;
-                    margin-top: 5px;
-                    padding: 5px;
+                    height: 0.5rem;
+                    margin-top: 0.5rem;
+                    padding: 0.5rem;
                     display: inline-flex;
                    
-                    padding: 8px 10px 9px 9px;
+                    padding: 0.8rem 1rem 0.9rem 0.9rem;
                     justify-content: center;
                     align-items: center;
-                    border-radius: 5px;
-                    border: 1px solid #87CAFF;
+                    border-radius: 0.5rem;
+                    border: 0.1rem solid #87CAFF;
                     background: rgba(255, 255, 255, 0.88);
                     color: #016DC3;
                     text-align: center;
                     font-family: "Noto Sans JP";
-                    font-size: 10px;
+                    font-size: 1rem;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-                    letter-spacing: 0.6px;
+                    letter-spacing: 0.06rem;
                 }
             }
             &__content{
-                margin-top: 5px;
-                padding: 10px;
+                margin-top: 0.5rem;
+                padding: 1rem;
                 color: #66696C;
                 font-size: 1.3rem;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                padding-bottom: 10px;
+                padding-bottom: 1rem;
             }
         }
     }

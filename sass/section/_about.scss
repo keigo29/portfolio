@@ -1,5 +1,5 @@
 .About{
-    margin-top: 130px;
+    margin-top: 13rem;
     &__txt{
         &__ttl{
             color: #191919;
@@ -9,7 +9,7 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            letter-spacing: 2.58px;
+            letter-spacing: 0.258rem;
         }
         &__dis{
             font-size: 1.3rem;
@@ -23,21 +23,21 @@
         }
     }
     &__container{
-        margin-top: 16px;
+        margin-top: 1.6rem;
         display: flex;
-        gap: 60px;
+        gap: 6rem;
         &__left{
             &__profile{
                 img{
-                    width: 352px;
-                    height: 351px;
+                    width: 35.2rem;
+                    height: 35.1rem;
                 }
             }
         }
         &__right{
             background: #F8F8F8;
-            padding-top: 23px;
-            padding-right: 25px;
+            padding-top: 2.3rem;
+            padding-right: 2.5rem;
 
             &__ttl{
                 color: #000;
@@ -47,30 +47,30 @@
                 line-height: normal;
             }
             &__dis{
-                margin-top: 5px;
+                margin-top: 0.5rem;
                 color: #000;
                 font-size: 1.8rem;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 22px; /* 169.231% */
+                line-height: 2.5rem; /* 169.231% */
             }
             &__name{
-                padding-right: 10px;
+                padding-right: 1rem;
 
-                padding-top: 20px;
+                padding-top: 2rem;
                 text-align: right;
-                font-size: 1.8rem;
+                font-size: 0.18rem;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                letter-spacing: 2.72px;
+                letter-spacing: 0.272rem;
                 &::after{
                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11' fill='none'%3E%3Cpath d='M1 9.91772L9.47365 9.47364L9.02957 0.999988' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
                     content: '';     // 疑似要素に必須
                     position: absolute;
                     background-repeat: no-repeat;
-                    width: 12px;
-                    height: 6px;
+                    width: 1.2rem;
+                    height: 0.6rem;
                 }
             }
         }

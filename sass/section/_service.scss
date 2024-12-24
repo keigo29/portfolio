@@ -1,16 +1,16 @@
 .Service{
-    margin-top: 150px;
+    margin-top: 15rem;
     &__head{
         &__ttl{
             color: var(--blue, #067AF2);
             text-align: center;
             /* text shadow */
-            text-shadow: 0px 5px 14px rgba(6, 122, 242, 0.32);
+            text-shadow: 0rem 0.5rem 1.4rem rgba(6, 122, 242, 0.32);
             font-size: 4.2rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            letter-spacing: 2.52px;
+            letter-spacing: 0.252rem;
         }
         &__dis{
            
@@ -21,57 +21,77 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            margin: 10px auto;
+            margin: 1rem auto;
         }
     }
     &__items{
          display: flex;
          width: 100%;
          justify-content: space-between;
-         margin-top: 30px;
+         margin-top: 3rem;
         &__item{
-
+            position: relative;
             flex: 1; /* 均等に幅を分配 */
-            margin: 0 50px;
-          
+            margin: 0 5rem;
+
+            &:nth-of-type(1){
+                img{
+                    width: 18rem;
+                    left: 6rem;
+                }
+            }
+            &:nth-of-type(2){
+                img{
+                    left: 5rem;
+                }
+            }
+            &:nth-of-type(3){
+                img{
+                    left: 2.5rem;
+                }
+            }
+
             &__container{
-                padding-top: 70px;
-                border-radius: 16px;
+                padding-top: 5rem;
+                border-radius: 1.6rem;
                 z-index: -1;
                 position: relative;
-                top: -158px;
+                margin-top: 10rem;
                 background: rgba(210, 210, 210, 0.22);
-                padding-top: 192px;
-                border-radius: 16px;
+                padding-top: 13rem;
+                padding-bottom: 0.5rem;
+                border-radius: 1.6rem;
                 background: rgba(210, 210, 210, 0.22);
                 &__ttl{
                 color: var(--blue, #067AF2);
                 text-align: center;
                 font-size: 2.1rem;
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 600;
                 line-height: normal;
-                letter-spacing: 1.26px;
+                letter-spacing: 0.126rem;
                 }
                 &__dis{
                     color: #000;
                     text-align: center;
                     font-size: 1.3rem;
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 500;
                     line-height: normal;
-                    padding: 20px;
+                    padding: 2rem;
                 }
 
             }
             img{
                 display: block; 
-                width: 180px;
+                height: 20rem;
+                
                 margin: 0 auto;
+                position: absolute;
             }
             &__head{
-                width: 100px;
-                line-height: 38.9px;
+                width: 10rem;
+                line-height: 3.89rem;
                 span{
                     color: #D2D2D2;
                     @include Kumbh;
@@ -79,7 +99,7 @@
                     font-style: normal;
                     font-weight: 700;
                     // line-height: normal;
-                    letter-spacing: 1.14px;
+                    letter-spacing: 0.114rem;
                 }
                     color: #D2D2D2;
                     @include Kumbh;
@@ -87,7 +107,7 @@
                     font-style: normal;
                     font-weight: 700;
                  
-                    letter-spacing: 1.14px;
+                    letter-spacing: 0.114rem;
                 
             }
         }
