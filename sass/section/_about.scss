@@ -36,9 +36,22 @@
         }
         &__right{
             background: #F8F8F8;
-            padding-top: 2.3rem;
+            padding-top: 6.3rem;
             padding-right: 2.5rem;
-
+            position: relative;
+            &::before{
+                background-image: url(/images/common/dot_background.png);
+                content: '';
+                display: block;
+                position: absolute;
+                background-repeat: no-repeat;
+                left: 63rem;
+                width: 49rem;
+                height: 30rem;
+                background-size: 56% auto;
+                top: -5rem;
+                z-index: -1;
+                }
             &__ttl{
                 color: #000;
                 font-size: 2.6rem;
@@ -51,26 +64,28 @@
                 color: #000;
                 font-size: 1.8rem;
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 500;
                 line-height: 2.5rem; /* 169.231% */
             }
             &__name{
                 padding-right: 1rem;
-
+                position: relative;
                 padding-top: 2rem;
                 text-align: right;
-                font-size: 0.18rem;
+                font-size: 1.8rem;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
                 letter-spacing: 0.272rem;
                 &::after{
-                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11' fill='none'%3E%3Cpath d='M1 9.91772L9.47365 9.47364L9.02957 0.999988' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                    content: '';     // 疑似要素に必須
+                    top: 5rem;
+                    right: -4rem;
+                    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none"%3E%3Cpath d="M1 9.91772L9.47365 9.47364L9.02957 0.999988" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
+                    content: '';
                     position: absolute;
                     background-repeat: no-repeat;
                     width: 1.2rem;
-                    height: 0.6rem;
+                    height: 4.6rem;
                 }
             }
         }
