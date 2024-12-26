@@ -192,16 +192,22 @@ body {
   padding: 0px 4px 1px 4px;
   align-items: center;
   gap: -2px;
+  color: #1386FF;
   flex-shrink: 0;
   border-radius: 100px;
-  /* text shadow */
+  border-radius: 100px;
+  border: 2px solid #8EC5FF;
+  background: #FFF;
   position: relative;
+  /* text shadow */
 }
 
 .Btn span {
   font-size: 2rem;
   text-align: center;
   padding-left: 50px;
+  text-decoration: none;
+  position: relative;
 }
 
 .Btn__blue {
@@ -212,7 +218,7 @@ body {
 }
 
 .Btn__blue span {
-  position: relative;
+  color: white;
 }
 
 .Btn::after {
@@ -468,7 +474,7 @@ body {
 }
 
 .Fv__container__text {
-  width: 30%;
+  width: 50%;
   padding-left: 160px;
 }
 
@@ -532,7 +538,7 @@ body {
 
 .About__container__right {
   background: #F8F8F8;
-  padding-top: 6.3rem;
+  padding-top: 2.3rem;
   padding-right: 2.5rem;
   position: relative;
 }
@@ -898,7 +904,7 @@ body {
   color: #D2D2D2;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.114rem;
@@ -1028,4 +1034,23 @@ body {
   font-weight: 600;
   line-height: normal;
   padding-bottom: 1rem;
+}
+
+.Works .Btn {
+  margin: 5rem auto;
+  width: 22.7rem;
+  font-weight: 700;
+}
+
+.Works .Btn::after {
+  content: '';
+  position: absolute;
+  background-image: url("/images/common/btn_arrow_blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: invert(35%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(90%) contrast(100%);
+  width: 1.3rem;
+  height: 1.6rem;
+  display: inline-block;
+  right: 50px;
 }

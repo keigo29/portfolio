@@ -117,6 +117,20 @@
         }
     }
     .Btn{
-
+        margin: 5rem auto;
+        width: 22.7rem;
+        font-weight: 700;
+        &::after {
+            content: '';     // 疑似要素に必須
+            position: absolute;
+            background-image: url('/images/common/btn_arrow_blue.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: invert(35%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(90%) contrast(100%);
+            width: 1.3rem;
+            height: 1.6rem;
+            display: inline-block;
+            right: 50px;
+        }
     }
 }
