@@ -1,8 +1,12 @@
 .Works{
     width: 100%;
     background: linear-gradient(180deg, #0AF 0%, #001971 115.91%);
-    height: 726px;
+    height: 72.6rem;
     margin-top: 15rem;
+    @include sp{
+        height: 100rem;
+        overflow-x:scroll;
+    }
     &__head{
         max-width: 1250px;
         margin: 0 auto;
@@ -10,6 +14,9 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        @include sp{
+            display: block;
+        }
         &::after{
             top: 4rem;
             left: -1.4rem;          
@@ -117,7 +124,7 @@
         }
     }
     .Btn{
-        margin: 5rem auto;
+        margin: 8rem auto;
         width: 22.7rem;
         font-weight: 700;
         &::after {

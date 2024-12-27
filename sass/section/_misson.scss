@@ -3,7 +3,7 @@
     margin-top: 10rem;
     color: rgb(255, 255, 255);
     &__container{
-        height: 424px;
+        height: 42.4rem;
         border-radius: 0px 20px 20px 0px;
         padding-top: 5rem;
         position: relative;
@@ -11,6 +11,10 @@
         padding-left: 3rem;
         padding-right: 5rem;
         background: var(--back-blue, linear-gradient(180deg, #0AF 0%, #083DF5 115.91%));   
+        @include sp{
+            height: 62.4rem;
+            padding-top: 2rem;
+        }
         &::before{
             content: '';
             background: var(--back-blue, linear-gradient(180deg, #0AF 0%, #083DF5 115.91%));
@@ -47,6 +51,7 @@
                 &::after{
                     top: -1rem;
                     left: -1rem;
+
                     background-image: url('data:image/svg+xml,%3Csvg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M9.72754 1.24268H1.24226V9.72796" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E');
                     content: '';
                     position: absolute;
@@ -55,6 +60,7 @@
                     height: 4.6rem;
                     transform: rotate(0deg);
                     transform-origin: center; // 回転基準を中央に設定
+                    
                 }
             }
             &__h2{

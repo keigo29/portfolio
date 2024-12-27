@@ -1,5 +1,8 @@
 .About{
     margin-top: 13rem;
+    @include sp {
+        padding-left: 1.5rem;
+    }
     &__txt{
         &__ttl{
             color: #191919;
@@ -26,11 +29,18 @@
         margin-top: 1.6rem;
         display: flex;
         gap: 6rem;
+        @include sp{
+            display: block;
+        }
         &__left{
             &__profile{
                 img{
                     width: 35.2rem;
                     height: 35.1rem;
+                    @include sp{
+                        width: 30.2rem;
+                        height: 30.1rem;
+                    }
                 }
             }
         }
@@ -51,6 +61,12 @@
                 background-size: 56% auto;
                 top: -5rem;
                 z-index: -1;
+                @include sp{
+                    display: block;
+                    left: 6rem;
+                    width: 49rem;
+                    height: 30rem;
+                }
                 }
             &__ttl{
                 color: #000;
@@ -86,6 +102,9 @@
                     background-repeat: no-repeat;
                     width: 1.2rem;
                     height: 4.6rem;
+                    @include sp{
+                        display: none;
+                    }
                 }
             }
         }

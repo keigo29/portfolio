@@ -20,14 +20,16 @@
     どうぞ、コーヒーやお茶でも飲みながらごゆっくりとサイト内を散策してください
     
     「この人と一緒に働いてみたい！」と思っていただけたら幸いです。
-    
     ">
     <meta name="keywords" content="開発,web制作,デザイン,">
 
     <!-- SNSの設定 -->
     <meta property="og:site_name" content="Portfolio-2025"><!-- サイト名 -->
     <meta property="og:title" content="Portfolio-2025"><!-- 上記titleと同じにする -->
-    <meta property="og:description" content=""><!-- 上記descriptionと同じにする 130文字以内 -->
+    <meta property="og:description" content="これまで私が手がけた制作物や身につけたスキルをまとめています。
+    どうぞ、コーヒーやお茶でも飲みながらごゆっくりとサイト内を散策してください
+    
+    「この人と一緒に働いてみたい！」と思っていただけたら幸いです。"><!-- 上記descriptionと同じにする 130文字以内 -->
     <meta property="og:type" content="website"> <!-- website(トップページ)/article(下位ページ) -->
     <meta property="og:url" content=""><!-- サイトURL -->
     <meta property="og:image" content="./images/display.png"><!-- OGPの設定絶対値設定 -->
@@ -54,7 +56,12 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
   <div class="Fv">
@@ -563,84 +570,143 @@
   </div>
 
   <div class="Works">
-    <div class="Works__head">
+    <div class="Works__head ">
       <div class="Works__head__title">
         <h2 class="Works__head__title__ttl">WORKS</h2>
         <p class="Works__head__title__dis">制作物</p>
       </div>
-      <div class="Works__head__container">ホームページ制作やサイトコーディングやWebサイトデザインの制作など<br>Webサイト制作に特化したご依頼を承っています</div>
-    </div>
-    <div class="Works__items">
-      <div class="Works__items__item">
-        <a href="">
-          <div class="Works__items__item__head">
-            <img src="./images/works/1.png" alt="">
-          </div>
-      
-        <h3 class="Works__items__item__ttl">
-          Portfolio
-        </h3>
-        <div class="Works__items__item__categoris">
-          <div class="Works__items__item__categoris__categori">
-            web
-          </div>
-          <div class="Works__items__item__categoris__categori">
-            desigin
-          </div>
-        </div>
-        <div class="Works__items__item__content">
-          ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
-        </div>
-      </a>
-      </div>
-      <div class="Works__items__item">
-        <a href="">
-          <div class="Works__items__item__head">
-            <img src="./images/works/1.png" alt="">
-          </div>
-        <h3 class="Works__items__item__ttl">
-          Portfolio
-        </h2>
-        <div class="Works__items__item__categoris">
-          <div class="Works__items__item__categoris__categori">
-            web
-          </div>
-          <div class="Works__items__item__categoris__categori">
-            desigin
-          </div>
-        </div>
-        <div class="Works__items__item__content">
-          ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
-        </div>
-      </a>
-      </div>
-      <div class="Works__items__item">
-        <a href="">
-          <div class="Works__items__item__head">
-            <img src="./images/works/1.png" alt="">
-          </div>
-      
-        <h3 class="Works__items__item__ttl">
-          Portfolio
-        </h2>
-        <div class="Works__items__item__categoris">
-          <div class="Works__items__item__categoris__categori">
-            web
-          </div>
-          <div class="Works__items__item__categoris__categori">
-            desigin
-          </div>
-        </div>
-        <div class="Works__items__item__content">
-          ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
-        </div>
-      </a>
+      <div class="Works__head__container">
+        ホームページ制作やサイトコーディングやWebサイトデザインの制作など<br>
+        Webサイト制作に特化したご依頼を承っています
       </div>
     </div>
-    <a href="" class="Btn">
-      <span>成果物一覧</span>
-    </a>
+    <div class="swiper">
+      <!-- 必要に応じたwrapper -->
+      <div class="swiper-wrapper">
+        <!-- スライド -->
+        <div class="swiper-slide">
+
+        </div>
+        <div class="swiper-slide">
+          <div class="Works__items__item ">
+            <a href="">
+              <div class="Works__items__item__head">
+                <img src="./images/works/1.png" alt="">
+              </div>
+              <h3 class="Works__items__item__ttl">Portfolio</h3>
+              <div class="Works__items__item__categoris">
+                <div class="Works__items__item__categoris__categori">web</div>
+                <div class="Works__items__item__categoris__categori">design</div>
+              </div>
+              <div class="Works__items__item__content">
+                ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="Works__items__item ">
+            <a href="">
+              <div class="Works__items__item__head">
+                <img src="./images/works/1.png" alt="">
+              </div>
+              <h3 class="Works__items__item__ttl">Portfolio</h3>
+              <div class="Works__items__item__categoris">
+                <div class="Works__items__item__categoris__categori">web</div>
+                <div class="Works__items__item__categoris__categori">design</div>
+              </div>
+              <div class="Works__items__item__content">
+                ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="Works__items__item ">
+            <a href="">
+              <div class="Works__items__item__head">
+                <img src="./images/works/1.png" alt="">
+              </div>
+              <h3 class="Works__items__item__ttl">Portfolio</h3>
+              <div class="Works__items__item__categoris">
+                <div class="Works__items__item__categoris__categori">web</div>
+                <div class="Works__items__item__categoris__categori">design</div>
+              </div>
+              <div class="Works__items__item__content">
+                ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
+              </div>
+            </a>
+          </div>
+         
+        </div>
+        <div class="swiper-slide">
+          <div class="Works__items__item ">
+            <a href="">
+              <div class="Works__items__item__head">
+                <img src="./images/works/1.png" alt="">
+              </div>
+              <h3 class="Works__items__item__ttl">Portfolio</h3>
+              <div class="Works__items__item__categoris">
+                <div class="Works__items__item__categoris__categori">web</div>
+                <div class="Works__items__item__categoris__categori">design</div>
+              </div>
+              <div class="Works__items__item__content">
+                ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
+              </div>
+            </a>
+          </div>
+          
+        </div>
+        <div class="swiper-slide">
+          <div class="Works__items__item ">
+            <a href="">
+              <div class="Works__items__item__head">
+                <img src="./images/works/2.png" alt="">
+              </div>
+              <h3 class="Works__items__item__ttl">Portfolio</h3>
+              <div class="Works__items__item__categoris">
+                <div class="Works__items__item__categoris__categori">web</div>
+                <div class="Works__items__item__categoris__categori">design</div>
+              </div>
+              <div class="Works__items__item__content">
+                ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
+              </div>
+            </a>
+          </div>
+        
+        </div>
+        <div class="swiper-slide">
+          <div class="Works__items__item ">
+            <a href="">
+              <div class="Works__items__item__head">
+                <img src="./images/works/3.png" alt="">
+              </div>
+              <h3 class="Works__items__item__ttl">Portfolio</h3>
+              <div class="Works__items__item__categoris">
+                <div class="Works__items__item__categoris__categori">web</div>
+                <div class="Works__items__item__categoris__categori">design</div>
+              </div>
+              <div class="Works__items__item__content">
+                ホームページ制作やサイトコーディングやWebサイトデザインの制作などWebサイト制作に特化したご依頼を承っています
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <!-- 必要に応じてページネーション -->
+      <div class="swiper-pagination"></div>
+      <!-- 必要に応じてナビボタン -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <a href="" class="Btn">
+        <span>成果物一覧</span>
+      </a>
+    </div>
+    
   </div>
+  
     <!-- <ul class="slider" id="slick01">
         <li><img src="images/pickup1.jpg" alt=""></li>
         <li><img src="images/pickup2.jpg" alt=""></li>
@@ -659,6 +725,7 @@
       </div>
     </section>
     <!-- フッター -->
+  
     <footer class="Footer">
       フッター
     </footer>

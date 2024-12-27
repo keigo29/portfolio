@@ -27,6 +27,9 @@
          width: 100%;
          justify-content: space-between;
          margin-top: 3rem;
+         @include sp {
+            display: block;
+        }
         &__item{
             position: relative;
             flex: 1; /* 均等に幅を分配 */

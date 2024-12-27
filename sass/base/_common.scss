@@ -98,11 +98,15 @@ html {
   background: #F8F8F8;
   @include pc {
     font-size: 10px;
+    
   }
 
   @include sp {
     font-size: 2.666666666667vw;
+    max-width: 100%;
     // font-size: 0.52083333333Vw;
+    overflow-x: hidden;
+    
   }
 }
 

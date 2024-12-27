@@ -4,6 +4,12 @@
     background-image: url("/images/fv_background.png");
     position: relative;
     overflow: hidden;
+    @include sp {
+        background-image: url(/images/fv_background.png);
+        overflow: hidden;
+        height: 128vh;
+        padding-top: 12rem;
+      }
     &__container{
         height: 100vh;
         display: flex;
@@ -16,22 +22,36 @@
         &__text{
             width: 100%;
             padding-left: 10%;
+            @include sp {
+             padding-left: 1rem;
+            }
             &__ttl{
                 // margin-top: 250px;
                 font-size: 9.6rem;
                 font-weight: 500;
                 line-height: 9.0rem;
                 @include Outfit;
+                @include sp {
+                    font-size: 6.5rem;
+                    line-height: 6.0rem;
+                }
             }
             &__dis{
                 color: rgba(0, 0, 0, 0.50);
                 margin-top: 30px;
                 font-size: 2rem;
                 font-weight: 700;
-                line-height: 32px; 
+                line-height: 3.2rem; 
+                @include sp {
+                    font-size: 1.5rem;
+                    line-height: 2.2rem; 
+                }
             }
             .Btn{
-                margin-top: 50px;                               
+                margin-top: 50px;        
+                @include sp {
+                    
+                }                       
             }
         }
     }
