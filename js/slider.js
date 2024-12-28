@@ -48,24 +48,24 @@ exit.addEventListener("click", (event) => {
 // const menu = document.querySelector('.Hum'); // Hum が menu であればこれでOK
 
 // スクロールイベントを監視
-window.addEventListener('scroll', () => {
-  const humRect = menu.getBoundingClientRect();
+// window.addEventListener('scroll', () => {
+//   const humRect = menu.getBoundingClientRect();
   
-  // 画面の上部にいる場合は非表示にする
-  if (humRect.top <= 10) {
-    menu.classList.add('hidden');  // Hum 要素が100px以下の場合に hidden クラスを追加
-  } else {
-    menu.classList.remove('hidden');  // それ以外の場合に hidden クラスを削除
-  }
-});
+//   // 画面の上部にいる場合は非表示にする
+//   if (humRect.top <= 10) {
+//     menu.classList.add('hidden');  // Hum 要素が100px以下の場合に hidden クラスを追加
+//   } else {
+//     menu.classList.remove('hidden');  // それ以外の場合に hidden クラスを削除
+//   }
+// });
 
-window.addEventListener('load', () => {
-  const humRect = menu.getBoundingClientRect();
+// window.addEventListener('load', () => {
+//   const humRect = menu.getBoundingClientRect();
   
-  // ページが読み込まれた時点での位置を確認
-  if (humRect.top <= 100) {
-    menu.classList.add('hidden');  // 画面上部にいる場合に非表示に
-  } else {
-    menu.classList.remove('hidden');  // それ以外の場合に表示
-  }
-});
+//   // ページが読み込まれた時点での位置を確認
+//   if (humRect.top <= 100) {
+//     menu.classList.add('hidden');  // 画面上部にいる場合に非表示に
+//   } else {
+//     menu.classList.remove('hidden');  // それ以外の場合に表示
+//   }
+// });
