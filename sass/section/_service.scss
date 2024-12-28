@@ -1,5 +1,9 @@
 .Service{
     margin-top: 15rem;
+    @include sp {
+        width: 95%;
+        margin: 15rem auto;
+    }
     &__head{
         &__ttl{
             color: var(--blue, #067AF2);
@@ -39,16 +43,26 @@
                 img{
                     width: 18rem;
                     left: 6rem;
+                    @include sp {
+                        left: 4rem;
+                    }
                 }
             }
             &:nth-of-type(2){
                 img{
                     left: 5rem;
+                    @include sp {
+                        left: 4rem;
+                    }
                 }
             }
             &:nth-of-type(3){
                 img{
                     left: 2.5rem;
+                    @include sp {
+                        left: 0rem;
+                        
+                    }
                 }
             }
 

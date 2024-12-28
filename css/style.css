@@ -160,6 +160,8 @@ body {
   margin: 0 auto;
   font-size: 1.6rem;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .Inner {
@@ -209,6 +211,7 @@ body {
   font-size: 2rem;
   text-align: center;
   padding-left: 50px;
+  font-weight: 500;
   text-decoration: none;
   position: relative;
 }
@@ -523,7 +526,6 @@ body {
 }
 
 .swiper-wrapper {
-  /* wrapperのサイズを調整 */
   width: 100%;
 }
 
@@ -531,11 +533,39 @@ body {
   margin-top: 6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .swiper {
+    margin-top: 4rem;
+  }
+}
+
 .swiper-slide {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
-  color: #ffffff;
-  width: 100%;
-  height: 100%;
+  /* スライド幅を自動計算 */
+  height: 300px;
+  width: 29.3;
+  margin-left: 0;
+  margin-right: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    width: 33.5rem !important;
+    height: 100%;
+    margin: 0 auto;
+    /* margin-left: auto; */
+    /* margin: 0 auto; */
+    margin-left: 4.1rem;
+    /* margin-right: auto; */
+    position: relative;
+    transition-property: transform;
+  }
+}
+
+.swiper-wrapper-active {
+  display: none;
 }
 
 .swiper-pagination-bullets {
@@ -549,22 +579,13 @@ body {
   background: #fff;
 }
 
-.swiper-pagination-bullet:first-child {
-  margin: 0 !important;
+.swiper-slide:empty {
+  display: none;
+  /* 空のスライドを非表示 */
 }
 
-.swiper-button-next, .swiper-button-prev {
-  position: absolute;
-  top: 30% !important;
-  width: calc(var(--swiper-navigation-size)/ 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(135, 135, 135, 0.868) !important;
+.swiper-pagination-bullet:first-child {
+  margin: 0 !important;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -591,6 +612,12 @@ body {
   font-size: 2rem;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    display: none;
+  }
 }
 
 .Header__left__item img {
@@ -629,7 +656,6 @@ body {
   height: 100vh;
   /* ビューポートの高さ全体 */
   width: 100vw;
-  top: -6rem;
   background-image: url("/images/fv_background.png");
   position: relative;
   overflow: hidden;
@@ -639,8 +665,8 @@ body {
   .Fv {
     background-image: url(/images/fv_background.png);
     overflow: hidden;
-    height: 128vh;
-    padding-top: 12rem;
+    height: 66rem;
+    padding-top: 0rem;
   }
 }
 
@@ -662,6 +688,8 @@ body {
 @media screen and (max-width: 768px) {
   .Fv__container__text {
     padding-left: 1rem;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -705,6 +733,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .About {
+    margin-top: 0rem;
     padding-left: 1.5rem;
   }
 }
@@ -845,14 +874,15 @@ body {
   padding-top: 5rem;
   position: relative;
   font-weight: 500;
-  padding-left: 3rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  margin-right: 1rem;
+  padding-right: 1.5rem;
   background: var(--back-blue, linear-gradient(180deg, #0AF 0%, #083DF5 115.91%));
 }
 
 @media screen and (max-width: 768px) {
   .Misson__container {
-    height: 62.4rem;
+    height: 81.4rem;
     padding-top: 2rem;
   }
 }
@@ -945,6 +975,13 @@ body {
   margin-top: 20rem;
 }
 
+@media screen and (max-width: 768px) {
+  .Skill {
+    width: 90%;
+    margin: 10rem auto;
+  }
+}
+
 .Skill__head {
   display: flex;
   justify-content: space-between;
@@ -1005,6 +1042,8 @@ body {
 @media screen and (max-width: 768px) {
   .Skill__head__con {
     margin-top: 1rem;
+    font-size: 1.6rem;
+    width: 100%;
   }
 }
 
@@ -1059,6 +1098,13 @@ body {
   margin-top: 15rem;
 }
 
+@media screen and (max-width: 768px) {
+  .Service {
+    width: 95%;
+    margin: 15rem auto;
+  }
+}
+
 .Service__head__ttl {
   color: var(--blue, #067AF2);
   text-align: center;
@@ -1106,12 +1152,30 @@ body {
   left: 6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .Service__items__item:nth-of-type(1) img {
+    left: 4rem;
+  }
+}
+
 .Service__items__item:nth-of-type(2) img {
   left: 5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .Service__items__item:nth-of-type(2) img {
+    left: 4rem;
+  }
+}
+
 .Service__items__item:nth-of-type(3) img {
   left: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Service__items__item:nth-of-type(3) img {
+    left: 0rem;
+  }
 }
 
 .Service__items__item__container {
@@ -1185,7 +1249,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .Works {
-    height: 100rem;
+    height: 84rem;
     overflow-x: scroll;
   }
 }
@@ -1202,6 +1266,7 @@ body {
 @media screen and (max-width: 768px) {
   .Works__head {
     display: block;
+    margin-left: 3rem;
   }
 }
 
@@ -1258,10 +1323,24 @@ body {
   height: 351px;
 }
 
+@media screen and (max-width: 768px) {
+  .Works__items__item {
+    height: 35.7rem;
+    width: 86%;
+  }
+}
+
 .Works__items__item__head img {
   width: 29.3rem;
   border-radius: 1.4rem;
-  height: 18.3rem;
+  height: 16.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Works__items__item__head img {
+    width: 28.3rem;
+    height: auto;
+  }
 }
 
 .Works__items__item__ttl {

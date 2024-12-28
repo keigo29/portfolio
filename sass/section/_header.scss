@@ -17,8 +17,10 @@
     font-size: 2rem;
     align-items: center;
     justify-content: space-between;
+    @include sp {
+        display: none;
+    }
     &__left{
-        
         &__item{
             img{
                 width: 5rem;
@@ -27,7 +29,6 @@
     }
     &__right{
         &__nav{
-           
             display: inline-flex;
             align-items: center;
             justify-content: center;

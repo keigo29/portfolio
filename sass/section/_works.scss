@@ -4,7 +4,8 @@
     height: 72.6rem;
     margin-top: 15rem;
     @include sp{
-        height: 100rem;
+        
+        height: 84rem;
         overflow-x:scroll;
     }
     &__head{
@@ -16,6 +17,7 @@
         position: relative;
         @include sp{
             display: block;
+            margin-left: 3rem;
         }
         &::after{
             top: 4rem;
@@ -66,12 +68,19 @@
             background: linear-gradient(180deg, #FFF 64.04%, #C0DCFF 100%);
             width: 293px;
             height: 351px;
+            @include sp {
+                height: 35.7rem;
+                width: 86% ;
+            }
             &__head{
-                
                 img{
                  width: 29.3rem;
                  border-radius: 1.4rem;
-                 height: 18.3rem;
+                 height: 16.3rem;
+                 @include sp {
+                    width: 28.3rem;
+                    height: auto;
+                 }
                 }
             }
             &__ttl{

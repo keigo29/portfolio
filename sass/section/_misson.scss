@@ -8,11 +8,12 @@
         padding-top: 5rem;
         position: relative;
         font-weight: 500;
-        padding-left: 3rem;
-        padding-right: 5rem;
+        padding-left: 2rem;
+    margin-right: 1rem;
+    padding-right: 1.5rem;
         background: var(--back-blue, linear-gradient(180deg, #0AF 0%, #083DF5 115.91%));   
         @include sp{
-            height: 62.4rem;
+            height: 81.4rem;
             padding-top: 2rem;
         }
         &::before{

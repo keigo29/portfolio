@@ -1,15 +1,15 @@
 .Fv{
     height: 100vh;  /* ビューポートの高さ全体 */
     width: 100vw;
-    top: -6rem;
     background-image: url("/images/fv_background.png");
     position: relative;
     overflow: hidden;
     @include sp {
         background-image: url(/images/fv_background.png);
         overflow: hidden;
-        height: 128vh;
-        padding-top: 12rem;
+        height: 66rem;
+        padding-top: 0rem;
+        
       }
     &__container{
         height: 100vh;
@@ -25,6 +25,8 @@
             padding-left: 10%;
             @include sp {
              padding-left: 1rem;
+             width: 90%;
+             margin: 0 auto;
             }
             &__ttl{
                 // margin-top: 250px;
