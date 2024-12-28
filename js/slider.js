@@ -28,7 +28,8 @@ const menu = document.querySelector('.Hum');
 const Bar = document.querySelector('.bar');
 const exit = document.querySelector('.exit');
 
-menu.addEventListener("click", () => {
+menu.addEventListener("click", (event) => {
+  event.preventDefault(); 
   // 'close' クラスが付いている場合は削除、ない場合は追加
   Bar.classList.toggle('close');
   exit.classList.toggle('close');
@@ -36,7 +37,8 @@ menu.addEventListener("click", () => {
 });
 
 // エグジットをクリックしたときにバーとエグジットを非表示にする
-exit.addEventListener("click", () => {
+exit.addEventListener("click", (event) => {
+  event.preventDefault();
   Bar.classList.add('close');
   exit.classList.add('close');
   menu.classList.toggle('close');
