@@ -1,5 +1,9 @@
 .About{
     margin-top: 13rem;
+    width: 100%;
+    overflow-x: hidden;
+    // margin-top: 13rem;
+    overflow-y: hidden;
     @include sp {
         margin-top: 0rem;
         padding-left: 1.5rem;
