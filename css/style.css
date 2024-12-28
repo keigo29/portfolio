@@ -159,6 +159,7 @@ body {
   min-width: auto;
   margin: 0 auto;
   font-size: 1.6rem;
+  position: relative;
 }
 
 .Inner {
@@ -447,6 +448,11 @@ body {
   /*ドットボタンの現在地表示の色*/
 }
 
+.swiper-slide {
+  width: 29.3rem !important;
+  margin-left: 4rem;
+}
+
 /* スライドの動き等速 */
 .slider-container {
   position: absolute;
@@ -567,10 +573,63 @@ body {
   width: 100%;
 }
 
+.Header {
+  max-width: 1250px;
+  margin: 0 auto;
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+  display: flex;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.808);
+  backdrop-filter: blur(12px);
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.07));
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: .5rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header__left__item img {
+  width: 5rem;
+}
+
+.Header__right__nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 23px;
+}
+
+.Header__right__nav__item a {
+  color: #016DC3;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 2rem;
+}
+
+.Header .btn-contact {
+  border-radius: 26px;
+  background: var(--gradient-blue, linear-gradient(91deg, #1386FF -5.23%, #056CD6 100.86%));
+  color: #FFF;
+  font-size: 2rem;
+  font-style: normal;
+  padding: 1rem 2rem;
+  margin-left: 2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .Fv {
   height: 100vh;
   /* ビューポートの高さ全体 */
   width: 100vw;
+  top: -6rem;
   background-image: url("/images/fv_background.png");
   position: relative;
   overflow: hidden;

@@ -1,6 +1,7 @@
 .Fv{
     height: 100vh;  /* ビューポートの高さ全体 */
     width: 100vw;
+    top: -6rem;
     background-image: url("/images/fv_background.png");
     position: relative;
     overflow: hidden;
