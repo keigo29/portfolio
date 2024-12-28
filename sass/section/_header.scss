@@ -18,9 +18,12 @@
     align-items: center;
     justify-content: space-between;
     @include sp {
-        display: none;
+        visibility: hidden;
     }
     &__left{
+        @include sp {
+            display: none;
+        }
         &__item{
             img{
                 width: 5rem;
@@ -28,6 +31,9 @@
         }
     }
     &__right{
+        @include sp {
+            display: none;
+        }
         &__nav{
             display: inline-flex;
             align-items: center;
@@ -57,4 +63,92 @@
         font-weight: 500;
         line-height: normal;
     }
+}
+
+.Hum{
+    @include pc{
+        display: none;
+    }
+    display: block;
+    visibility: visible;
+    cursor: pointer;
+    position: sticky;
+    width: fit-content;
+    left: 28rem;
+    width: 7.3rem;
+    top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.7rem;
+    color: #016DC3;
+    height: 3.3rem;
+    font-weight: 500;
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.691);
+    border: solid 0.18rem #016cc385;
+    border-radius: 2rem;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.178));
+    @include pc {
+        display: none;
+    }
+}
+.bar{
+        position: sticky;
+        width: 20rem;
+        text-align: left;
+        border-radius: 2rem;
+        z-index: 200;
+        background: white;
+        left: 15rem;
+        top: 1rem;
+        padding-left: 1rem;
+        padding: 1rem;
+        @include pc{
+            display: none;
+        }
+    
+    &__nav{
+        position: relative;
+        top: -2rem;
+        &__item{
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            a{
+                color: #016DC3;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            
+        }
+    }
+}
+.close {
+    display: none!important;
+    @include pc{
+        display: none;
+    }
+}
+.exit{
+    text-align: center;
+    line-height: 2.7rem;
+    color: #016DC3;
+    height: 3.3rem;
+    font-weight: 500;
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.691);
+    border: solid 0.18rem #016cc385;
+    font-size: 2rem;
+    border-radius: 2rem;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.178));
+    width: 7.3rem;
+    margin-left: 12rem;
+    @include pc{
+        display: none;
+    }
+}
+
+.close{
+    display: none;
 }

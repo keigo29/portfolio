@@ -4,11 +4,13 @@
     background-image: url("/images/fv_background.png");
     position: relative;
     overflow: hidden;
+    top: -6rem;
     @include sp {
         background-image: url(/images/fv_background.png);
         overflow: hidden;
         height: 66rem;
         padding-top: 0rem;
+        top: -19rem;
         
       }
     &__container{

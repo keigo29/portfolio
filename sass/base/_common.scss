@@ -96,6 +96,7 @@ html {
   font-size: 0.83333333333333vw;
   // 計算式：　10(px) / 1200(px) * 100 = 0.83333333333333
   background: #F8F8F8;
+  
   @include pc {
     font-size: 10px;
     
@@ -135,7 +136,8 @@ body {
   font-size: 1.6rem;
   position: relative;
   width: 100%;
-    overflow-x: hidden;
+    
+    overflow-y: visible;
 }
 
 .Inner {

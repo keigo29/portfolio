@@ -3,6 +3,8 @@
     @include sp {
         margin-top: 0rem;
         padding-left: 1.5rem;
+        width: 100%;
+        overflow-x: hidden;
     }
     &__txt{
         &__ttl{

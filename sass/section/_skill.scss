@@ -90,12 +90,35 @@
             width: 100%;
             flex-wrap: wrap;
             margin: 0 auto;
+            @include sp {
+                justify-content: flex-start;
+            }
             &__item{
                 width: 15.5rem;
                 margin:0 3rem;
+                margin-bottom: 3rem;
+                @include sp {
+                    width: 10.5rem;
+                }
+                &__ttl{
+                    color: #016DC3;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                font-size: 2rem;
+                text-align: center;
+                }
+                &__txt{
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                }
                 img{
                     width: 15.5rem;
-                    margin-bottom: 3.5rem;
+                    margin-bottom: .5rem;
+                    @include sp{
+                        width: 11.5rem;
+                    }
                 }
             }
         }
