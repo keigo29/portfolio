@@ -685,6 +685,7 @@ body {
   border: solid 0.18rem #016cc385;
   border-radius: 2rem;
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.178));
+  transition: opacity 0.3s ease;
 }
 
 @media screen and (min-width: 1250px) {
@@ -697,6 +698,12 @@ body {
   .Hum {
     display: none;
   }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  /* 非表示状態でクリックできないようにする */
 }
 
 .bar {
@@ -720,7 +727,7 @@ body {
 
 .bar__nav {
   position: relative;
-  top: -2rem;
+  top: -2.5rem;
 }
 
 .bar__nav__item {
