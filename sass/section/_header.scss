@@ -100,7 +100,7 @@
   }
   
 .bar{
-        position: sticky;
+        position: fixed;
         width: 20rem;
         text-align: left;
         border-radius: 2rem;
@@ -110,6 +110,7 @@
         top: 1rem;
         padding-left: 1rem;
         padding: 1rem;
+        scroll-behavior: auto;
         @include pc{
             display: none;
         }
