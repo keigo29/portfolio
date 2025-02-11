@@ -8,10 +8,9 @@
     @include sp {
         background-image: url(/images/fv_background.png);
         overflow: hidden;
-        height: 66rem;
+        height: 100vh;
         padding-top: 0rem;
-        top: -12rem;
-        
+        // top: -12rem;
       }
     &__container{
         height: 100vh;

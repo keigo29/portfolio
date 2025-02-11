@@ -793,9 +793,8 @@ body {
   .Fv {
     background-image: url(/images/fv_background.png);
     overflow: hidden;
-    height: 66rem;
+    height: 100vh;
     padding-top: 0rem;
-    top: -12rem;
   }
 }
 
@@ -858,6 +857,9 @@ body {
 
 .About {
   margin-top: 13rem;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 768px) {
