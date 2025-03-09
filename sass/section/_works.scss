@@ -62,19 +62,21 @@
     &__items{
         margin-top: 72px;
         display: flex;
+  
         gap: 30px;
         &__item{
             border-radius: 14px;
             background: linear-gradient(180deg, #FFF 64.04%, #C0DCFF 100%);
             width: 293px;
             height: 351px;
+            overflow: hidden;
             @include sp {
                 height: 35.7rem;
                 width: 86% ;
             }
             &__head{
                 img{
-                 width: 29.3rem;
+                //  width: 29.3rem;
                  border-radius: 1.4rem;
                  height: 16.3rem;
                  @include sp {

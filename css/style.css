@@ -452,7 +452,6 @@ body {
 }
 
 .swiper-slide {
-  width: 29.3rem !important;
   margin-left: 4rem;
 }
 
@@ -1488,6 +1487,7 @@ body {
   background: linear-gradient(180deg, #FFF 64.04%, #C0DCFF 100%);
   width: 293px;
   height: 351px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -1498,7 +1498,6 @@ body {
 }
 
 .Works__items__item__head img {
-  width: 29.3rem;
   border-radius: 1.4rem;
   height: 16.3rem;
 }

@@ -1,21 +1,28 @@
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 1, // 同時表示スライド数
-  centeredSlides: true, // 中央に配置
-  loop: true,
-  autoplay:{
-    delay:2000,
+  slidesPerView: 1, // スマホ時は1枚表示
+  centeredSlides: true, // 1枚表示の時は中央配置
+  loop: true, // ループ有効化
+  autoplay: {
+      delay: 2000, // 2秒ごとに自動スライド
+      disableOnInteraction: false, // ユーザー操作後も自動スライド継続
   },
-  spaceBetween: 0, 
+  spaceBetween: 10, // スライド間の隙間 (スマホ)
   breakpoints: {
-    768: {
-      slidesPerView: 7, // スライドの幅に応じて変更
-     
-    },  
+      768: {
+          slidesPerView: 5, // PC時は7枚表示
+          centeredSlides: false, // 7枚表示時は中央配置オフ
+          spaceBetween: 40, // スライドの隙間
+      },
   },
   pagination: {
-    el: ".swiper-pagination",
-    clickable: true, // ページネーションのクリックを有効化
+      el: ".swiper-pagination",
+      clickable: true, // ページネーションのクリック有効
   },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  loopAdditionalSlides: 5, // ループ時に追加するスライド (不足防止)
 });
 const slides = document.querySelectorAll('.swiper-slide');
 slides.forEach(slide => {
