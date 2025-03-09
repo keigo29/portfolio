@@ -1511,13 +1511,13 @@ body {
 }
 
 .Works__items__item__ttl {
-  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: var(--blue, #067AF2);
-  font-size: 2.1rem;
+  color: var(--blue, #2a3036);
+  font-size: 1.9rem;
   font-style: normal;
-  font-weight: 700;
+  margin-top: 0.8rem;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 0.126rem;
 }
@@ -1531,7 +1531,6 @@ body {
 
 .Works__items__item__categoris__categori {
   height: 0.5rem;
-  margin-top: 0.5rem;
   padding: 0.5rem;
   display: inline-flex;
   padding: 0.8rem 1rem 0.9rem 0.9rem;
@@ -1551,13 +1550,13 @@ body {
 }
 
 .Works__items__item__content {
-  margin-top: 0.5rem;
+  margin-top: .2rem;
   padding: 1rem;
   color: #66696C;
   font-size: 1.3rem;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 500;
+  line-height: 1.2;
   padding-bottom: 1rem;
 }
 
