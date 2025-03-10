@@ -75,9 +75,10 @@
                 width: 86% ;
             }
             &__head{
+                text-align: center;
                 img{
                 //  width: 29.3rem;
-                 border-radius: 1.4rem;
+               
                  height: 16.3rem;
                  @include sp {
                     width: 28.3rem;

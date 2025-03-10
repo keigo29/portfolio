@@ -839,7 +839,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
   margin-top: 30px;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 3.2rem;
 }
 
@@ -1497,8 +1497,11 @@ body {
   }
 }
 
+.Works__items__item__head {
+  text-align: center;
+}
+
 .Works__items__item__head img {
-  border-radius: 1.4rem;
   height: 16.3rem;
 }
 
