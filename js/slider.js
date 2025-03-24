@@ -9,7 +9,7 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 10, // スライド間の隙間 (スマホ)
   breakpoints: {
       768: {
-          slidesPerView: 6, // PC時は7枚表示
+          slidesPerView: 5, // PC時は7枚表示
           centeredSlides: false, // 7枚表示時は中央配置オフ
           spaceBetween: 5, // スライドの隙間
       },
