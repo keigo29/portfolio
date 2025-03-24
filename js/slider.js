@@ -9,9 +9,9 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 10, // スライド間の隙間 (スマホ)
   breakpoints: {
       768: {
-          slidesPerView: 5, // PC時は7枚表示
+          slidesPerView: 6, // PC時は7枚表示
           centeredSlides: false, // 7枚表示時は中央配置オフ
-          spaceBetween: 40, // スライドの隙間
+          spaceBetween: 5, // スライドの隙間
       },
   },
   pagination: {
@@ -22,7 +22,7 @@ const swiper = new Swiper(".swiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
-  loopAdditionalSlides: 5, // ループ時に追加するスライド (不足防止)
+  loopAdditionalSlides: 1, // ループ時に追加するスライド (不足防止)
 });
 const slides = document.querySelectorAll('.swiper-slide');
 slides.forEach(slide => {
